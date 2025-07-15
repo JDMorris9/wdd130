@@ -1,5 +1,5 @@
 :root {
-    --title-color: rgb(65, 86, 155);
+    --title-color: rgb(59, 74, 124);
     --secondary-color: #eee;
     --border-standard: 1px solid black;
 }
@@ -27,6 +27,7 @@ nav a {
 }
 
 h1 {
+    padding-top: 10px;
     color: var(--title-color);
 }
 
