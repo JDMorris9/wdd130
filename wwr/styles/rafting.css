@@ -49,6 +49,14 @@ nav, p, section, article {
     padding: 8px;
 }
 
+header nav a:link {
+   color: var(--accent2-color); 
+}
+
+header nav a:visited {
+    color: var(--accent1-color);
+}
+
 .socialmedia a {
     text-decoration: none;
 }
