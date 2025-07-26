@@ -96,7 +96,7 @@ header nav a:visited {
 .hero article {
     position: absolute;
     top: 380px;
-    color: var(--secondary-color);
+    color: black;
     background-color: var(--primary-color);
     padding: 8px;
 }
