@@ -51,15 +51,11 @@ h1, h2 {
 }
 
 h1 {
-    position: absolute;
     font-size: 3rem;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: .7;
-    background-color: var(--secondary-color);
-    color: #fff;
 }
 
 h2 {
@@ -85,6 +81,13 @@ header nav a:visited {
 
 .hero {
     position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    opacity: .7;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 .hero img {
@@ -161,4 +164,27 @@ footer img{
 
 .adventure-bank figcaption {
     text-align: center;
+}
+
+.contact-title h1 {
+
+}
+
+.landing-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.telephone a {
+    text-decoration: none;
+}
+
+.location {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location iframe {
+    width: 450px;
+    height: 300px;
 }
