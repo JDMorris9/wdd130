@@ -55,19 +55,65 @@
         <section class="employees">
             <!--Employees-->
             <h2>Meet Our Team Members</h2>
-
+            <div class="employee-pics">
+                <figure>
+                    <img src="images/emp1.jpg" alt="Doom Nightshadow">
+                    <figcaption>Doom Nightshadow</figcaption>
+                    <figcaption>Years of Experience: 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp2.jpg" alt="Madame Stormglaucken-Grimbane">
+                    <figcaption>Madame Stormglaucken-Grimbane</figcaption>
+                    <figcaption>Years of Experience: 8</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/emp3.jpg" alt="Koschei the Deathless">
+                    <figcaption>Koschei the Deathless</figcaption>
+                    <figcaption>Years of Experience: 956</figcaption>
+                </figure>
+            </div>
         </section>
         <section class="message-form">
             <!--User Form-->
             <h2>Send Us a Message</h2>
             <form>
-
+                <fieldset class="user-contact">
+                    <legend>Contact Information</legend>
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email">
+                </fieldset>
+                <fieldset class="user-purpose">
+                    <legend>Purpose of Message:</legend>
+                    <div class="radio-buttons">
+                        <div>
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="user-message">
+                    <legend>Message:</legend>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </fieldset>
+                <div class="submit-button">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </section>
     </main>
     <footer>
         <!--Wireframe Link-->
-        <p><a href=""></a></p>
+        <p><a href="https://wireframe.cc/UgBvko">My Wireframe</a></p>
         <p>&copy; 2025 | White Water Rafting Company | Janae Morris</p>
         <nav class="socialmedia">
             <a href="https://facebook.com"><img src="images/facebook-logo.png" alt="redirect to Facebook"></a>

@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #A59D8D; /*khaki*/
+    --primary-color: #b6ae9f; /*khaki*/
     --secondary-color: #263D42; /*gunmetal*/
     --accent1-color: #2DE1C2; /*turquoise*/
     --accent2-color: #C5FFFD; /*celeste*/
@@ -56,6 +56,9 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
+    opacity: .7;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 h2 {
@@ -85,9 +88,6 @@ header nav a:visited {
 
 .hero h1 {
     position: absolute;
-    opacity: .7;
-    background-color: var(--secondary-color);
-    color: #fff;
 }
 
 .hero img {
@@ -119,6 +119,7 @@ header nav a:visited {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-color);
 }
 
 .history h2 {
@@ -148,13 +149,15 @@ footer img{
 
 .adventures h2{
     margin: 2rem 1rem;
-    text-align: center;
+    text-align: center; 
 }
 
 .adventure-bank {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1rem;
+    border: 1px solid black;
 }
 
 .adventure-bank img {
@@ -167,7 +170,7 @@ footer img{
 }
 
 .contact-title h1 {
-
+    background-color: var(--secondary-color);
 }
 
 .landing-info {
@@ -187,4 +190,89 @@ footer img{
 .location iframe {
     width: 450px;
     height: 300px;
+}
+
+.employees {
+    background-color: var(--primary-color);
+}
+
+.employees h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.employee-pics {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.employee-pics img {
+    height:200px;
+}
+
+.message-form {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.message-form h2 {
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 5px;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+form {
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.radio-buttons div {
+    display: flex;
+    flex: 1 1 30%;
+    align-items: center;
+}
+
+input[type="submit"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--accent2-color);
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
