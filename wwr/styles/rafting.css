@@ -256,6 +256,7 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .radio-buttons div {
@@ -275,4 +276,9 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    gap: 0.5rem;
 }
