@@ -90,10 +90,47 @@ header nav a:visited {
     position: absolute;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
+.home-hero {
+    position: relative;
     height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 65%;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(38, 61, 66, 0.9), rgba(38, 61, 66, 0));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home-hero h1 {
+    position: static !important;
+    background: none;
+    color: white;
+    text-align: right;
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    max-width: 100;
+}
+
+.home-hero h1 .center-word {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-15px);
+}
+
+.hero img {
+    width: 100%;
+    z-index: 0;
+    position: relative;
 }
 
 .hero article {
@@ -217,14 +254,13 @@ footer img{
     border: 1px solid black;
 }
 
+
 .message-form h2 {
     text-align: center;
     border: 1px solid black;
     color: white;
     background-color: var(--secondary-color);
-    padding: 5px;
-}
-
+    padding: 5px;}
 
 legend {
     font-weight: bold;
@@ -281,4 +317,130 @@ button[type="submit"] {
 .newsletter {
     display: flex;
     gap: 0.5rem;
+}
+
+.call-act {
+    display: flex;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+        box-shadow: 10px 5px 5px var(--secondary-color);
+}
+
+.button-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.button-link:visited {
+    color: var(--accent2-color);
+    }
+
+
+.offerings {
+    margin: 0;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+    background-color: var(--primary-color);
+}
+
+.offerings h2 {
+    padding: 1.5rem;
+    margin: 0.5rem;
+    font-size: 3rem;
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    box-shadow: 10px 5px 5px var(--secondary-color);
+}
+
+.expectations, .bring {
+    text-align: center;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expectations p {
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.bring li {
+    text-align: left;
+}
+
+.offerings img {
+    margin: 1rem;
+    max-width: 370px;
+    justify-self: center;
+}
+
+.offerings-img {
+    grid-row: span 2;
+}
+
+.offerings ul {
+    padding: 0 3rem;
+}
+
+.fin-statement {
+    font-weight: bold;
+    font-size: 1.5rem;
+    grid-column: span 2;
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bring {
+    grid-row: span 2;
+}
+
+.disclaimer {
+    position: relative;
+    width: 100%;
+}
+
+.disclaimer img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.disclaimer p {
+    position: absolute;
+    top: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(38, 61, 66, 0.8);
+}
+
+.home-form {
+    margin-top: 3rem;
+    background-color: var(--accent2-color);
+    text-align: center;
+    border: 1px solid lightgray;
+    box-shadow: 10px 5px 5px var(--secondary-color);
+
+}
+
+.home-form h2 {
+    padding: 0.5rem;
+    text-align: left;
+    font-size: 3rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.home-form form {
+    padding-top: 0;
+    text-align: left;
 }
